@@ -28,14 +28,29 @@
     
     [self setScrollView];
     
+    [self setNavigation];
+}
+
+#pragma mark 设置导航栏
+- (void)setNavigation {
     //设置导航栏背景颜色
     UIImage *navigationBarBackgroundImage = [UIImage imageFromColor:[UIColor redColor] imageSize:CGSizeMake(WIDTH, 64)];
     navigationBarBackgroundImage = [UIImage imageByApplyingAlpha:0 image:navigationBarBackgroundImage];
     [self.navigationController.navigationBar setBackgroundImage:navigationBarBackgroundImage forBarMetrics:UIBarMetricsDefault];
     
     self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    NSLog(@"%@", self.navigationController.navigationBar.subviews);
+    
+    //创建一个假象背景view
+//    frame = (0 -20; 320 64)
+    UIView *navigationBarBackgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, -20, WIDTH, 64)];
+    navigationBarBackgroundView.alpha = 0;
+    navigationBarBackgroundView.backgroundColor = [UIColor orangeColor];
+    [self.navigationController.navigationBar insertSubview:navigationBarBackgroundView atIndex:0];
 }
 
+#pragma mark 设置滚动视图
 - (void)setScrollView {
     //设置滚动视图
     self.scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
@@ -54,12 +69,11 @@
 #pragma mark scrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     //设置导航栏背景透明度
-    CGFloat alpha = (scrollView.contentOffset.y / 200.0f);
+    CGFloat alpha = (scrollView.contentOffset.y / 300.0f);
     alpha = alpha < 0 ? 0 : alpha > 1 ? 1 : alpha;
     
-    UIImage *navigationBarBackgroundImage = [UIImage imageFromColor:[UIColor redColor] imageSize:CGSizeMake(WIDTH, 64)];
-    navigationBarBackgroundImage = [UIImage imageByApplyingAlpha:alpha image:navigationBarBackgroundImage];
-    [self.navigationController.navigationBar setBackgroundImage:navigationBarBackgroundImage forBarMetrics:UIBarMetricsDefault];
+    UIView *navigationBarBackgroundView = self.navigationController.navigationBar.subviews[0];
+    navigationBarBackgroundView.alpha = alpha;
 }
 
 
