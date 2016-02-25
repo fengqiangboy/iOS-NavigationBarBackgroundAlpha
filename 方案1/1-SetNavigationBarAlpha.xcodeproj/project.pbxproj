@@ -13,8 +13,6 @@
 		27F0A6B31C7ED7A2006F7C03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F0A6B11C7ED7A2006F7C03 /* Main.storyboard */; };
 		27F0A6B51C7ED7A2006F7C03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27F0A6B41C7ED7A2006F7C03 /* Assets.xcassets */; };
 		27F0A6B81C7ED7A2006F7C03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F0A6B61C7ED7A2006F7C03 /* LaunchScreen.storyboard */; };
-		27F0A6C21C7EDAD5006F7C03 /* TestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F0A6C01C7EDAD5006F7C03 /* TestTableViewCell.m */; };
-		27F0A6C31C7EDAD5006F7C03 /* TestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27F0A6C11C7EDAD5006F7C03 /* TestTableViewCell.xib */; };
 		27F0A6C71C7EDE88006F7C03 /* 111.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F0A6C61C7EDE88006F7C03 /* 111.png */; };
 /* End PBXBuildFile section */
 
@@ -29,9 +27,6 @@
 		27F0A6B41C7ED7A2006F7C03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27F0A6B71C7ED7A2006F7C03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27F0A6B91C7ED7A2006F7C03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		27F0A6BF1C7EDAD5006F7C03 /* TestTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewCell.h; sourceTree = "<group>"; };
-		27F0A6C01C7EDAD5006F7C03 /* TestTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewCell.m; sourceTree = "<group>"; };
-		27F0A6C11C7EDAD5006F7C03 /* TestTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestTableViewCell.xib; sourceTree = "<group>"; };
 		27F0A6C61C7EDE88006F7C03 /* 111.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 111.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,9 +70,6 @@
 				27F0A6B61C7ED7A2006F7C03 /* LaunchScreen.storyboard */,
 				27F0A6B91C7ED7A2006F7C03 /* Info.plist */,
 				27F0A6A81C7ED7A2006F7C03 /* Supporting Files */,
-				27F0A6BF1C7EDAD5006F7C03 /* TestTableViewCell.h */,
-				27F0A6C01C7EDAD5006F7C03 /* TestTableViewCell.m */,
-				27F0A6C11C7EDAD5006F7C03 /* TestTableViewCell.xib */,
 			);
 			path = "1-SetNavigationBarAlpha";
 			sourceTree = "<group>";
@@ -149,7 +141,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				27F0A6B81C7ED7A2006F7C03 /* LaunchScreen.storyboard in Resources */,
-				27F0A6C31C7EDAD5006F7C03 /* TestTableViewCell.xib in Resources */,
 				27F0A6B51C7ED7A2006F7C03 /* Assets.xcassets in Resources */,
 				27F0A6C71C7EDE88006F7C03 /* 111.png in Resources */,
 				27F0A6B31C7ED7A2006F7C03 /* Main.storyboard in Resources */,
@@ -164,7 +155,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				27F0A6B01C7ED7A2006F7C03 /* ViewController.m in Sources */,
-				27F0A6C21C7EDAD5006F7C03 /* TestTableViewCell.m in Sources */,
 				27F0A6AD1C7ED7A2006F7C03 /* AppDelegate.m in Sources */,
 				27F0A6AA1C7ED7A2006F7C03 /* main.m in Sources */,
 			);
@@ -313,6 +303,7 @@
 				27F0A6BE1C7ED7A2006F7C03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

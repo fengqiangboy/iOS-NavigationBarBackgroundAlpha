@@ -40,13 +40,12 @@
     
     self.automaticallyAdjustsScrollViewInsets = NO;
     
-    NSLog(@"%@", self.navigationController.navigationBar.subviews);
     
     //创建一个假象背景view
-//    frame = (0 -20; 320 64)
     UIView *navigationBarBackgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, -20, WIDTH, 64)];
     navigationBarBackgroundView.alpha = 0;
     navigationBarBackgroundView.backgroundColor = [UIColor orangeColor];
+    //插入
     [self.navigationController.navigationBar insertSubview:navigationBarBackgroundView atIndex:0];
 }
 

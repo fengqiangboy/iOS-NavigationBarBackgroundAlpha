@@ -28,6 +28,10 @@
     
     [self setScrollView];
     
+    [self setNavigation];
+}
+
+- (void)setNavigation {
     //设置导航栏背景颜色
     UIImage *navigationBarBackgroundImage = [UIImage imageFromColor:[UIColor redColor] imageSize:CGSizeMake(WIDTH, 64)];
     navigationBarBackgroundImage = [UIImage imageByApplyingAlpha:0 image:navigationBarBackgroundImage];

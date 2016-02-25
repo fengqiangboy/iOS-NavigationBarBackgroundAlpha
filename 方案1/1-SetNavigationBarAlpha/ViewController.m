@@ -26,6 +26,7 @@
     [self setScrollView];
 }
 
+#pragma mark 设置scrollView
 - (void)setScrollView {
     self.scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
     UIImage *image = [UIImage imageNamed:@"111.png"];
@@ -42,6 +43,7 @@
 
 #pragma mark scrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    //改变透明度
     self.navigationController.navigationBar.alpha = scrollView.contentOffset.y / 200.0f;
 }
 
